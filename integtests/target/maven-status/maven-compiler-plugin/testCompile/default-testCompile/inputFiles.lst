@@ -1,0 +1,8 @@
+/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/integtests/src/test/java/domainapp/integtests/bootstrap/SimpleAppSystemInitializer.java
+/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/integtests/src/test/java/domainapp/integtests/specs/RunSpecs.java
+/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/integtests/src/test/java/domainapp/integtests/tests/modules/simple/SimpleObjectsIntegTest.java
+/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/integtests/src/test/java/domainapp/integtests/tests/SimpleAppIntegTest.java
+/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/integtests/src/test/java/domainapp/integtests/tests/modules/simple/SimpleObjectIntegTest.java
+/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/integtests/src/test/java/domainapp/integtests/specglue/CatalogOfFixturesGlue.java
+/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/integtests/src/test/java/domainapp/integtests/specglue/BootstrappingGlue.java
+/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/integtests/src/test/java/domainapp/integtests/specglue/modules/simple/SimpleObjectGlue.java
