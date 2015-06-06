@@ -1,5 +1,5 @@
-Colas Felices Administracion fundacion Mascotas
-===============================================
+Colas Felices Administracion de fundacion de rescate de Perros de la Calle
+==========================================================================
 
 Proyecto de software libre (GPLv3) de gestión para Rescate de Perros.
 
