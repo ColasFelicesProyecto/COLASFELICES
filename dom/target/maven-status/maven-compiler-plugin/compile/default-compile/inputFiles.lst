@@ -1,4 +1,7 @@
-/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/dom/src/main/java/domainapp/dom/modules/simple/SimpleObjects.java
-/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/dom/src/main/java/domainapp/dom/app/homepage/HomePageService.java
-/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/dom/src/main/java/domainapp/dom/app/homepage/HomePageViewModel.java
-/home/pablocliment/workspace/Proyecto2015/ColasFelicesProject/dom/src/main/java/domainapp/dom/modules/simple/SimpleObject.java
+/home/alejandra/Escritorio/COLASFELICES/dom/src/main/java/domainapp/dom/modules/simple/Tratamiento.java
+/home/alejandra/Escritorio/COLASFELICES/dom/src/main/java/domainapp/dom/modules/simple/FichaMedica.java
+/home/alejandra/Escritorio/COLASFELICES/dom/src/main/java/domainapp/dom/modules/simple/SimpleObject.java
+/home/alejandra/Escritorio/COLASFELICES/dom/src/main/java/domainapp/dom/modules/simple/SimpleObjects.java
+/home/alejandra/Escritorio/COLASFELICES/dom/src/main/java/domainapp/dom/modules/simple/FichasMedicas.java
+/home/alejandra/Escritorio/COLASFELICES/dom/src/main/java/domainapp/dom/app/homepage/HomePageViewModel.java
+/home/alejandra/Escritorio/COLASFELICES/dom/src/main/java/domainapp/dom/app/homepage/HomePageService.java
