@@ -62,7 +62,6 @@ public class RepoPerro {
     
 
    public Perro crearPerro(
-		    final @ParameterLayout(named="Legajo") int legajo,
 	    	final @ParameterLayout(named="Nombre")String nombre,
 	    	final @ParameterLayout(named="Edad") int edad,
 	    	final @Parameter(optionality = Optionality.OPTIONAL) @ParameterLayout(named="Color") String color,
@@ -77,7 +76,6 @@ public class RepoPerro {
 	    	)
    {
 	    	final Perro perro = container.newTransientInstance(Perro.class);
-	    	perro.setLegajo(legajo);
 	    	perro.setNombre(nombre);
 	    	perro.setColor(color);
 	    	perro.setBarrio(barrio);

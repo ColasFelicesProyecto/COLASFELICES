@@ -8,12 +8,17 @@ import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
+import javax.jdo.annotations.Sequence;
+import javax.jdo.annotations.SequenceStrategy;
 import javax.jdo.annotations.VersionStrategy;
 
 import org.apache.isis.applib.annotation.BookmarkPolicy;
 import org.apache.isis.applib.annotation.DomainObject;
 import org.apache.isis.applib.annotation.DomainObjectLayout;
 import org.apache.isis.applib.annotation.MemberOrder;
+import org.apache.isis.applib.annotation.Parameter;
+import org.apache.isis.applib.annotation.ParameterLayout;
+import org.apache.isis.applib.annotation.TypicalLength;
 
 
 
@@ -39,15 +44,15 @@ import org.apache.isis.applib.annotation.MemberOrder;
 @DomainObjectLayout(
         bookmarking = BookmarkPolicy.AS_ROOT
 )
+
+@Sequence(name = "legajo", strategy = SequenceStrategy.CONTIGUOUS)
 public class Perro {
 	
 	private int legajo;
 	
-	@PrimaryKey
-	@Persistent(valueStrategy= IdGeneratorStrategy.SEQUENCE)
+	@Persistent(valueStrategy = IdGeneratorStrategy.INCREMENT, sequence = "legajo")
 	@MemberOrder(sequence = "1")
 	@javax.jdo.annotations.Column(allowsNull="false")
-	
     public int getLegajo() {
 		return legajo;
 	}
