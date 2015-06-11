@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="domainapp.integtests.specs.RunSpecs" time="0.005" tests="4" errors="0" skipped="0" failures="0">
+<testsuite name="domainapp.integtests.specs.RunSpecs" time="0.004" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/jdk1.7.0_67/jre/lib/amd64"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/alejandra/Escritorio/COLASFELICES"/>
+    <property name="user.dir" value="/home/alejandra/colasFelicesProject/COLASFELICES"/>
     <property name="java.runtime.version" value="1.7.0_67-b01"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/opt/jdk1.7.0_67/jre/lib/endorsed"/>
@@ -61,5 +61,5 @@
   <testcase name="Given there are initially 3 simple objects" classname="Scenario: Existing simple objects can be listed and new ones created" time="0.001"/>
   <testcase name="When I create a new simple object" classname="Scenario: Existing simple objects can be listed and new ones created" time="0"/>
   <testcase name="Then there are 4 simple objects" classname="Scenario: Existing simple objects can be listed and new ones created" time="0.001"/>
-  <testcase name="Scenario: Existing simple objects can be listed and new ones created" classname="Scenario: Existing simple objects can be listed and new ones created" time="0.003"/>
+  <testcase name="Scenario: Existing simple objects can be listed and new ones created" classname="Scenario: Existing simple objects can be listed and new ones created" time="0.002"/>
 </testsuite>
