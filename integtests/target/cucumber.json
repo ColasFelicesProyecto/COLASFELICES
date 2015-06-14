@@ -16,7 +16,7 @@
         "after": [
           {
             "result": {
-              "duration": 848027,
+              "duration": 1091756,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "before": [
           {
             "result": {
-              "duration": 7430882196,
+              "duration": 6769131261,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 281178768,
+              "duration": 234102574,
               "status": "passed"
             },
             "match": {
@@ -58,7 +58,7 @@
         "steps": [
           {
             "result": {
-              "duration": 291005675,
+              "duration": 357557815,
               "status": "passed"
             },
             "name": "there are initially 3 simple objects",
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 1031174,
+              "duration": 1469832,
               "status": "passed"
             },
             "name": "I create a new simple object",
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 5142531,
+              "duration": 6674359,
               "status": "passed"
             },
             "name": "there are 4 simple objects",
