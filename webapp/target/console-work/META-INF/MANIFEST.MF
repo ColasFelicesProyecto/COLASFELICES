@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
-Build-Time: 20150613-2105
-Build-Java: 1.7.0_65
+Build-Time: 2015-06-14T01:27:55Z
+Build-Java: 1.7.0_67
 Build-OS: Linux
 Built-By: alejandra
-Build-Jdk: 1.7.0_65
-Build-Maven: Maven 3.0.4
+Build-Jdk: 1.7.0_67
+Build-Maven: Maven 3.2.3
 Build-Label: 1.0-SNAPSHOT
-Created-By: Apache Maven 3.0.4
+Created-By: Apache Maven 3.2.3
 Build-Host: 
 Build-User: alejandra
 Archiver-Version: Plexus Archiver
