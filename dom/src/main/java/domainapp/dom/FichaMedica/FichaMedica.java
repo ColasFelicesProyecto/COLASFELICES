@@ -1,6 +1,8 @@
 package domainapp.dom.FichaMedica;
 
 import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.Element;
@@ -56,18 +58,17 @@ public class FichaMedica{
 		this.perro = perro;
 	}
 
-	
 	private Tratamiento tratamiento;
-	
+	@Persistent
 	@MemberOrder(sequence = "2")
-	@Column(name="Tratamiento")
-	public  Tratamiento getTratamiento() {
+	@Column(allowsNull="true")
+	public Tratamiento getTratamiento() {
 		return tratamiento;
 	}
 	public void setTratamiento(Tratamiento tratamiento) {
 		this.tratamiento = tratamiento;
 	}
-	
+
 	// Catracion (property)
 	private String castracion;
 	@Persistent
@@ -80,22 +81,29 @@ public class FichaMedica{
 		this.castracion = castracion;
 	}
 
-	
-	// Vacuna (property)
-	/*private List<Vacuna> Listvacuna;
-	
-	@Persistent(table="ACCOUNT_ADDRESSES")
-	@MemberOrder(sequence = "6")
-	@Join(column="FICHAMEDICA_ID_OID") 
-	@Element(column="VACUNA_ID_EID") 
-	public List<Vacuna> getVacuna() {
-		return Listvacuna;
-	}
-	public void setVacuna(List<Vacuna> listaVacuna) {
-		this.Listvacuna = listaVacuna;
-	}*/
 
-	
+	private Vacuna vacuna;
+	@Persistent
+	@MemberOrder(sequence = "4")
+	@Column(allowsNull="true")
+	public Vacuna getVacuna() {
+		return vacuna;
+	}
+	public void setVacuna(Vacuna vacuna) {
+		this.vacuna = vacuna;
+	}
+/*	//Vacuna (property)
+	private SortedSet<Vacuna> listvacuna=new TreeSet<Vacuna>();
+
+	@MemberOrder(sequence="4")
+	@Persistent(mappedBy="fichaMedica")
+	@Join 
+	public SortedSet<Vacuna> getListvacuna() {
+		return listvacuna;
+	}
+	public void setListvacuna(SortedSet<Vacuna> listvacuna) {
+		listvacuna = listvacuna;
+	}*/
 
 	
 }

@@ -35,6 +35,17 @@ import org.apache.isis.applib.annotation.MemberOrder;
 @DomainObjectLayout(bookmarking = BookmarkPolicy.AS_ROOT)
 public class Tratamiento {
 	
+	private FichaMedica fichaMedica;
+	
+	@MemberOrder(sequence = "2")
+	@Column(name="FichaMedica")
+	public  FichaMedica getFichaMedica() {
+		return fichaMedica;
+	}
+	public void setFichaMedica(FichaMedica fichaMedica) {
+		this.fichaMedica = fichaMedica;
+	}
+	
 	    // Descripcion(property)
 		private  String tratamiento;
 		@Persistent

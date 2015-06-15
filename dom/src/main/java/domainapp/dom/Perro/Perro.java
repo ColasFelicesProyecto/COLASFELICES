@@ -153,7 +153,7 @@ public class Perro {
 	
 	@Persistent
 	@MemberOrder(sequence = "8")
-	@javax.jdo.annotations.Column(allowsNull="false")
+	@Column(allowsNull="false")
 	public String getBarrio() {
 		return barrio;
 	}
@@ -175,11 +175,10 @@ public class Perro {
 	}
 	
 	
-	private Egreso egreso;
+	private Egreso egreso;	
 	
-	@Persistent
 	@MemberOrder(sequence = "10")
-	@javax.jdo.annotations.Column(allowsNull="true")
+	@Column(name="Egreso")
 	public Egreso getEgreso() {
 		return egreso;
 	}

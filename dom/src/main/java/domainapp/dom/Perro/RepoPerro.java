@@ -22,14 +22,14 @@ public class RepoPerro {
    @MemberOrder(sequence = "1")
    public Perro crearPerro(
 		   // final @ParameterLayout(named="Legajo")int legajo,
-	    	final @ParameterLayout(named="Nombre")String nombre,
-	    	final @ParameterLayout(named="Edad") int edad,
-	    	final @Parameter(optionality = Optionality.OPTIONAL) @ParameterLayout(named="Color") String color,
+	    	final @ParameterLayout(named="Nombre")@Parameter(regexPattern="[A-Za-z]+") String nombre,
+	    	final @ParameterLayout(named="Edad") @Parameter(regexPattern="/d{5}")  int edad,
+	    	final @Parameter(optionality = Optionality.OPTIONAL,regexPattern="[A-Za-z]+") @ParameterLayout(named="Color") String color,
 	    	final @Parameter(optionality = Optionality.OPTIONAL) @ParameterLayout(named="Raza") Raza raza,
 	    	final @Parameter(optionality = Optionality.OPTIONAL) @ParameterLayout(named="Tamaño") E_tamaño tamaño,
-	    	final @ParameterLayout(named="Direccion")String direccion ,
+	    	final @ParameterLayout(named="Direccion") String direccion ,
 	    	final @ParameterLayout(named="Barrio") String barrio,
-	    	final @Parameter(optionality = Optionality.OPTIONAL) @ParameterLayout(named="DiagnosticoPresuntivo") String diagnosticoPresuntivo,
+	    	final @Parameter(optionality = Optionality.OPTIONAL,regexPattern="[A-Za-z]+") @ParameterLayout(named="DiagnosticoPresuntivo") String diagnosticoPresuntivo,
 	    	final @Parameter(optionality = Optionality.OPTIONAL) @ParameterLayout(named="Egreso") Egreso egreso
 	    	)
    {
@@ -54,19 +54,19 @@ public class RepoPerro {
        return container.allMatches(new QueryDefault<>(Perro.class,"BuscarPorNombre","nombre", nombre));
    }
 
-	@MemberOrder(sequence = "3")
+	@MemberOrder(sequence = "4")
    public List<Perro> listarTodos(){
        return container.allInstances(Perro.class);
    }
 
-	@MemberOrder(sequence = "4")
+	@MemberOrder(sequence = "3")
    public List<Perro> buscarPorLegajo(@ParameterLayout(named="Legajo")final int legajo){
        return container.allMatches(new QueryDefault<>(Perro.class,"BuscarPorLegajo","legajo", legajo));
    }
     
 
-    @javax.inject.Inject 
-    DomainObjectContainer container;
-    
+	 @javax.inject.Inject 
+	    DomainObjectContainer container;
+	    
 
 }
