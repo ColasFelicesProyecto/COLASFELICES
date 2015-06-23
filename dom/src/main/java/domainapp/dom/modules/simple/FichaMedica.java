@@ -158,7 +158,7 @@ public class FichaMedica implements Comparable<FichaMedica>{
 	}
 	
 	public enum E_raza{
-		LABRADOR, BULLDOG, DOGO,PITBULL, BOXER, CHIHUHUA, BEAGLE;
+		LABRADOR, BULLDOG, DOGO,PITBULL, BOXER, CHIHUHUA, BEAGLE, PERRO, SALCHICHA, POLICIA;
 	}
 
 	@Override
